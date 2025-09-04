@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS Computer Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MS Computer Hub Logo">
+    <h1>MS Computer Hub</h1>
+    <div class="tagline">One Stop Software Store for Windows & Mac</div>
+  </header>
+
+  <div class="container">
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search software...">
+      <select id="osFilter">
+        <option value="all">All OS</option>
+        <option value="windows">Windows</option>
+        <option value="mac">Mac</option>
+      </select>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="office">Office Tools</option>
+        <option value="adobe">Adobe Collection</option>
+        <option value="editing">Video & Audio Editing</option>
+        <option value="design">Design & Utility</option>
+      </select>
+    </div>
+
+    <div class="products" id="productList">
+      <!-- Example Product Cards -->
+      <div class="card" data-os="mac" data-category="adobe">
+        <h3>MacOS Master Collection (All Adobe Apps)</h3>
+        <p>Complete Adobe CC bundle for Mac – Photoshop, Illustrator, Premiere Pro, After Effects & more.</p>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpi1PXnm_NCOj0Hj-IQYGEjbpiNpNiji1Dt4RrBoOUO96A/viewform?usp=header','_blank')">Pay / Book</button>
+      </div>
+
+      <div class="card" data-os="windows" data-category="office">
+        <h3>Microsoft Office 2021 (Windows)</h3>
+        <p>Lifetime activated Office suite for Windows (Word, Excel, PowerPoint, Outlook).</p>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpi1PXnm_NCOj0Hj-IQYGEjbpiNpNiji1Dt4RrBoOUO96A/viewform?usp=header','_blank')">Pay / Book</button>
+      </div>
+
+      <div class="card" data-os="mac" data-category="editing">
+        <h3>Final Cut Pro X</h3>
+        <p>Professional video editing software exclusive for MacOS.</p>
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfowpi1PXnm_NCOj0Hj-IQYGEjbpiNpNiji1Dt4RrBoOUO96A/viewform?usp=header','_blank')">Pay / Book</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 MS Computer Hub. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
